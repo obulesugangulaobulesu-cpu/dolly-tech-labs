@@ -1,0 +1,485 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+    background:linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.75)),
+    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 36px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(56,189,248,.35);
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+}
+/* ================= SERVICES ================= */
+
+.services{
+    padding:100px 8%;
+    background:#111827;
+    text-align:center;
+}
+
+.services h2{
+    font-size:42px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+    border:1px solid rgba(56,189,248,.2);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(56,189,248,.3);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.service-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.btn-small{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn-small:hover{
+    background:#0ea5e9;
+}
+/* ================= WHY US ================= */
+
+.why-us{
+    padding:100px 8%;
+    background:#111827;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(56,189,248,.3);
+}
+
+.why-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    background:#0f172a;
+    text-align:center;
+}
+
+.stat-box{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+}
+
+.stat-box h2{
+    color:#38bdf8;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+/* ================= LOAN FORM ================= */
+
+.loan-form{
+    padding:100px 8%;
+    background:#111827;
+    text-align:center;
+}
+
+.loan-form h2{
+    color:#38bdf8;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.loan-form form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.loan-form input,
+.loan-form select,
+.loan-form textarea{
+
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#1e293b;
+    color:#fff;
+    font-size:16px;
+}
+
+.loan-form textarea{
+    resize:none;
+}
+
+.loan-form input:focus,
+.loan-form select:focus,
+.loan-form textarea:focus{
+
+    outline:2px solid #38bdf8;
+}
+
+.loan-form button{
+    width:220px;
+    margin:auto;
+}
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:32px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+/* ================= AI CHAT ================= */
+
+.ai-btn{
+
+position:fixed;
+
+bottom:100px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+background:#0ea5e9;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:#fff;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+
+.chat-widget{
+
+position:fixed;
+
+right:25px;
+
+bottom:180px;
+
+width:320px;
+
+background:#1e293b;
+
+border-radius:20px;
+
+overflow:hidden;
+
+display:none;
+
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+z-index:999;
+
+}
+
+.chat-header{
+
+background:#0ea5e9;
+
+padding:15px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:#fff;
+
+}
+
+.chat-header span{
+
+cursor:pointer;
+
+}
+
+.chat-body{
+
+padding:20px;
+
+}
+
+.chat-body p{
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+.chat-body button{
+
+width:100%;
+
+padding:12px;
+
+margin:8px 0;
+
+border:none;
+
+border-radius:10px;
+
+background:#334155;
+
+color:#fff;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.chat-body button:hover{
+
+background:#0ea5e9;
+
+}
+/* ================= FOOTER ================= */
+
+footer{
+
+padding:40px 8%;
+
+background:#020617;
+
+text-align:center;
+
+}
+
+footer h2{
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+}
+
+footer p{
+
+color:#cbd5e1;
+
+margin:10px 0;
+
+}
