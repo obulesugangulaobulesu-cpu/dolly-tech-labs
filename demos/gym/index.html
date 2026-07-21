@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolly Fitness Gym</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🏋️ Dolly Fitness
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                TRANSFORM YOUR BODY
+            </h1>
+
+            <p>
+                Train Hard. Stay Strong. Become Your Best Version.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#plans" class="btn">
+                    Join Now
+                </a>
+
+                <a href="#about" class="btn-outline">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2>About Our Gym</h2>
+
+        <p>
+            Dolly Fitness Gym provides world-class equipment,
+            certified trainers, modern workout programs and
+            nutrition guidance to help you achieve your dream body.
+        </p>
+
+    </section>
+
+    <!-- Membership -->
+
+    <section class="plans" id="plans">
+
+        <h2>Membership Plans</h2>
+
+        <div class="plan-container">
+
+            <div class="card">
+                <h3>Basic</h3>
+                <h1>₹999</h1>
+                <p>Monthly Membership</p>
+            </div>
+
+            <div class="card">
+                <h3>Standard</h3>
+                <h1>₹1999</h1>
+                <p>Gym + Cardio</p>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <h1>₹3999</h1>
+                <p>Personal Trainer + Diet Plan</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Trainers -->
+
+    <section class="trainers" id="trainers">
+
+        <h2>Expert Trainers</h2>
+
+        <div class="trainer-container">
+
+            <div class="trainer-card">
+                <h3>John Carter</h3>
+                <p>Strength Coach</p>
+            </div>
+
+            <div class="trainer-card">
+                <h3>Sarah Wilson</h3>
+                <p>Fitness Expert</p>
+            </div>
+
+            <div class="trainer-card">
+                <h3>David Lee</h3>
+                <p>Bodybuilding Coach</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BMI -->
+
+    <section class="bmi">
+
+        <h2>BMI Calculator</h2>
+
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+
+        <button onclick="calculateBMI()">
+            Calculate BMI
+        </button>
+
+        <h3 id="result"></h3>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+
+        <button>
+            Send Message
+        </button>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Dolly Tech Labs</h3>
+
+        <p>
+            Professional Gym Website Demo
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
